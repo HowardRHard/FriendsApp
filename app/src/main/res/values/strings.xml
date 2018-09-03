@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Friends App</string>
+
+    <string name="link_left">https://randomuser.me/api/portraits/men/34.jpg</string>
+    <string name="link_right">https://randomuser.me/api/portraits/men/11.jpg</string>
+
 </resources>
