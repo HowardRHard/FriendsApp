@@ -33,21 +33,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:textStyle="bold"
-                    android:text="@string/name_label"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/name"
                     android:layout_weight="1"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:textStyle="bold"
-                    android:text="@string/age_label"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/age"
                     android:layout_weight="1"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:textStyle="bold"
-                    android:text="@string/city_label"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/city"
                     android:layout_weight="1"/>
 
             </LinearLayout>
@@ -58,26 +61,79 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/friendName"
+                    android:id="@+id/person_name"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    tools:text="Lorum Ipsum" />
+                    tools:text="Lorum Ipsum"
+                    android:textColor="@color/colorBlack"
+                     />
 
                 <TextView
-                    android:id="@+id/friendAge"
+                    android:id="@+id/person_age"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     tools:text="Lorum Ipsum"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"/>
 
                 <TextView
-                    android:id="@+id/friendCity"
+                    android:id="@+id/person_city"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     tools:text="Lorum Ipsum"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"/>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/controls_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/call_friend"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/call"
+                        android:tint="@color/colorGreen"
+                        android:layout_gravity="end"/>
+
+                    <ImageView
+                        android:id="@+id/email_friend"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/email"
+                        android:tint="@color/colorRed"
+                        android:layout_gravity="end"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/controls_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/add_friend"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/add"
+                        android:layout_gravity="end"/>
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
