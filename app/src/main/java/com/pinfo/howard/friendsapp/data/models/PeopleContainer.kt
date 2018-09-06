@@ -1,15 +1,15 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class FriendContainer {
+class PeopleContainer {
 
     @SerializedName("results")
     @Expose
-    lateinit var friend: List<Friend>
+    lateinit var person: List<Person>
 
     @Expose
-    lateinit var info: FriendInfo
+    lateinit var info: PersonInfo
 
 }

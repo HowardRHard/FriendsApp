@@ -1,8 +1,8 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 import com.google.gson.annotations.Expose
 
-class FriendTimezone {
+class PersonTimezone {
 
     @Expose
     var offset: String? = null

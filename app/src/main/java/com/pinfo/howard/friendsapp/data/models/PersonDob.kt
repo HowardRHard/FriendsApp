@@ -1,9 +1,8 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 import com.google.gson.annotations.Expose
-import com.google.gson.annotations.SerializedName
 
-class FriendDob {
+class PersonDob {
 
     @Expose
     var date: String? = null

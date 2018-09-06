@@ -1,8 +1,8 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 import com.google.gson.annotations.Expose
 
-class FriendLocation {
+class PersonLocation {
 
     @Expose
     var street: String? = null
@@ -17,9 +17,9 @@ class FriendLocation {
     var postcode: String? = null
 
     @Expose
-    var coordinates: FriendCoordinates? = null
+    var coordinates: PersonCoordinates? = null
 
     @Expose
-    var timezone: FriendTimezone? = null
+    var timezone: PersonTimezone? = null
 
 }

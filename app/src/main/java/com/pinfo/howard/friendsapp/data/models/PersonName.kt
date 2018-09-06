@@ -1,9 +1,9 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 
 import com.google.gson.annotations.Expose
 
-class FriendName {
+class PersonName {
 
     @Expose
     var title: String? = null

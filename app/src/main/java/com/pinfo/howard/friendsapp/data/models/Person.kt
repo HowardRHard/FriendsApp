@@ -1,29 +1,29 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 import com.google.gson.annotations.Expose
 
-class Friend {
+class Person {
 
     @Expose
     var gender: String? = null
 
     @Expose
-    var name: FriendName? = null
+    var name: PersonName? = null
 
     @Expose
-    var location: FriendLocation? = null
+    var location: PersonLocation? = null
 
     @Expose
     var email: String? = null
 
     @Expose
-    var login: FriendLogin? = null
+    var login: PersonLogin? = null
 
     @Expose
-    var dob: FriendDob? = null
+    var dob: PersonDob? = null
 
     @Expose
-    var registered: FriendRegistered? = null
+    var registered: PersonRegistered? = null
 
     @Expose
     var phone: String? = null
@@ -35,7 +35,7 @@ class Friend {
     var id: Id? = null
 
     @Expose
-    var picture: FriendPicture? = null
+    var picture: PersonPicture? = null
 
     @Expose
     var nat: String? = null

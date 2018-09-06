@@ -1,9 +1,9 @@
-package com.pinfo.howard.friendsapp.models
+package com.pinfo.howard.friendsapp.data.models
 
 
 import com.google.gson.annotations.Expose
 
-class FriendLogin {
+class PersonLogin {
 
     @Expose
     var uuid: String? = null
