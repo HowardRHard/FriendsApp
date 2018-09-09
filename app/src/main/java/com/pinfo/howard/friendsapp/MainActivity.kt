@@ -1,12 +1,16 @@
 package com.pinfo.howard.friendsapp
 
+import android.content.DialogInterface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.ActionBarDrawerToggle
+import android.support.v7.app.AlertDialog
 import android.view.Gravity
 import android.view.MenuItem
+import com.pinfo.howard.friendsapp.R.id.drawer_layout
+import com.pinfo.howard.friendsapp.R.id.navView
 import com.pinfo.howard.friendsapp.dagger.Application
 import com.pinfo.howard.friendsapp.people.PeopleFragment
 import com.pinfo.howard.friendsapp.utils.addFragment
@@ -75,5 +79,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun supportFragmentInjector(): AndroidInjector<Fragment> {
         return mFragmentInjector
+    }
+
+    override fun onBackPressed() {
+        if(supportFragmentManager.backStackEntryCount > 1) {
+            super.onBackPressed()
+        } else {
+            val dialogBuilder = AlertDialog.Builder(this)
+            dialogBuilder.setMessage(getString(R.string.exit_text))
+                    .setCancelable(false)
+                    .setPositiveButton(getString(R.string.cancel)) { dialog, _-> dialog.cancel() }
+                    .setNegativeButton(getString(R.string.confirm)) { _, _ -> finish() }
+                    .create()
+
+            dialogBuilder.show()
+        }
     }
 }

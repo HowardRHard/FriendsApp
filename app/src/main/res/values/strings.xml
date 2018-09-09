@@ -1,15 +1,21 @@
 <resources>
     <string name="app_name">Friends</string>
     <string name="BASE_URL">https://randomuser.me/api/</string>
-    <string name="name_label">Name:</string>
-    <string name="age_label">Age:</string>
-    <string name="city_label">City:</string>
+
+    <!--Drawer text-->
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <!--Fragment text-->
     <string name="home">Home</string>
     <string name="friends">Friends</string>
     <string name="type">type</string>
-    <string name="city">City:</string>
-    <string name="age">Age:</string>
-    <string name="name">Name:</string>
+    <!--Labels-->
+    <string name="name_label">Name:</string>
+    <string name="age_label">Age:</string>
+    <string name="city_label">City:</string>
+    <!--Exit Dialog-->
+    <string name="exit_text">Are you sure you want to close Friends?</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+
 </resources>

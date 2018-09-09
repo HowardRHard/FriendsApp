@@ -34,7 +34,7 @@
                     android:layout_height="0dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:text="@string/name"
+                    android:text="@string/name_label"
                     android:layout_weight="1"/>
 
                 <TextView
@@ -42,7 +42,7 @@
                     android:layout_height="0dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:text="@string/age"
+                    android:text="@string/age_label"
                     android:layout_weight="1"/>
 
                 <TextView
@@ -50,7 +50,7 @@
                     android:layout_height="0dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
-                    android:text="@string/city"
+                    android:text="@string/city_label"
                     android:layout_weight="1"/>
 
             </LinearLayout>

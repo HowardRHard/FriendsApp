@@ -4,15 +4,15 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 
 fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int, backStackTag: String? = null) {
-    supportFragmentManager.inTransaction {
-        add(frameId, fragment)
-        backStackTag?.let { addToBackStack(fragment.javaClass.name) }
-    }
+    supportFragmentManager.beginTransaction()
+            .add(frameId, fragment, backStackTag)
+            .addToBackStack(backStackTag)
+            .commit()
 }
 
 fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int, backStackTag: String? = null) {
-    supportFragmentManager.inTransaction {
-        replace(frameId, fragment)
-        backStackTag?.let { addToBackStack(fragment.javaClass.name) }
-    }
+    supportFragmentManager.beginTransaction()
+            .replace(frameId, fragment, backStackTag)
+            .addToBackStack(backStackTag)
+            .commit()
 }
